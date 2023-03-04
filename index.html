@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Know Your Sport!</h1>
+            <p>Some sport that you might like...</p>
+        </header>
+        <main>
+            <i onclick="changeImage(-1)" class="ph-arrow-fat-lines-left"></i>
+            <div>
+                <img class="image" src="/assets/img1.jpg" alt="Baseball">
+                <img class="image" src="/assets/img2.jpg" alt="Snowboard">
+                <img class="image" src="/assets/img3.jpg" alt="Motocross">
+                <img class="image" src="/assets/img4.jpg" alt="Golf">
+                <img class="image" src="/assets/img5.jpg" alt="Surf">
+            </div>
+            <i onclick="changeImage(1)" class="ph-arrow-fat-lines-right"></i>
+            <div class="dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
